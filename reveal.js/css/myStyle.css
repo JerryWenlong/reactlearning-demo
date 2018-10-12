@@ -1,0 +1,9 @@
+.fr{
+	float:right;
+}
+.hidden{
+	display: none;
+}
+ul,li{
+	list-style: none;
+}

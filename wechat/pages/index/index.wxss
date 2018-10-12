@@ -1,0 +1,43 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-location{
+	margin-top:20px;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.locationinfo{
+  font-size: 14px;
+  font-family: "Microsoft Yahei", tahoma, arial, "Hiragino Sans GB", "SimSun", sans-serif;
+  color: #858585;
+}
+.locationinfo span{
+  margin-right:5px;
+}
+
+.btn{
+  font-size:14px;
+  color: #858585;
+}
+.mapself{
+  width: 35px;
+  height: 35px;
+}

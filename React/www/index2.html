@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React JSX Demo</title>
+    <script src="../node_modules/react/dist/react.js"></script>
+    <script src="../node_modules/react-dom/dist/react-dom.js"></script>
+    <!-- <script src="./libs/babel-standalone/babel.js"></script> -->
+    <script src="./libs/browser.js"></script>
+  </head>
+  <body>
+    <div id="example"></div>
+   <!--  <script type="text/javascript">
+      ReactDOM.render(
+        React.createElement("h1", { className: "title", id:'first-demo', 'data-self'}, "Hello, world!"),
+        document.getElementById('example')
+      )
+    </script> -->
+
+    <script type="text/babel">
+      ReactDOM.render(
+        <h1 className="title" data-self='123' id='first-demo'>Hello, world!</h1>,
+        document.getElementById('example')
+      )
+    </script>
+
+    <!-- <script type="text/babel">
+      var My_li = React.createClass({
+                render: function (){
+                    return (
+                      <li>{this.props.children}</li>
+                    )
+                }
+            }); 
+
+      {/* use this after React@v16.0.0
+      class My_li extends React.Component{
+        render(){
+          return (
+            <li>{this.props.children}</li>
+          )
+        }
+      }
+      */}
+
+      var li1 = React.createElement(My_li, {key: 1}, 'first li');
+      var li2 = React.createElement(My_li, {key: 2}, 'second li');
+      var li3 = React.createElement(My_li, {key: 3}, 'third li');
+
+      var My_ul = React.createElement('ul', {}, [li1, li2, li3])
+      ReactDOM.render(
+        My_ul,
+        document.getElementById('example')
+      )
+    </script> -->
+  </body>
+</html>
